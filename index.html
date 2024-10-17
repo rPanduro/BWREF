@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BWREF BEAUTY</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="//code.tidio.co/eg43ianpfnodvxhulzb3jhldideigrz3.js" async></script>
+</head>
+
+<body>   
+    <header id="main-header"> 
+  		<div id="menu">
+            <div class="logo-header">
+                <img class="logo" src="Images/logo.png"/>  
+            </div>
+		    <nav>
+		        <li><a href="#ini">Inicio</a></li>
+		        <li><a href="#">Servicios</a>
+		            <ul>
+		                <li><a href="#maquillaje">Maquillajes</a></li>
+		                <li><a href="#skincare">Skincare</a></li>
+		                <li><a href="#herramientas">Herramientas</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="#">Acerca de</a>
+		            <ul>
+		                <li><a href="#tutorial">Tutoriales</a></li>
+						<li><a href="#comentarios">Comentarios</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="#">Contacto</a>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/wendy.palma.5099" target="_blank">
+                                <img style="filter:invert(100);" src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="facebook" width="4">
+                                 Facebook
+                            </a>
+                        </li>
+                            
+                        <li>
+                            <a href="https://www.instagram.com/wendy_pm__?igshid=M2lobWNkdnZrY202&utm_source=qr" target="_blank">
+                                <img style="filter:invert(100);" src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="instagram" width="4">
+                                 Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+		    </nav>
+            <div class="container_icon">
+                <div class="container_cart_icon">
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" 
+                    class="icon_cart">
+                    <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 
+                        1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 
+                        0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 
+                        0 1 1-.75 0 .375.375 0 0 1 .75 0Z" 
+                    />
+                    </svg>
+                    <div class="count_products">
+                        <span id="contador_productos">0</span>
+                    </div>
+                </div>
+                <div class="container_cart_products
+                hidden_cart">
+                    <div class="row_product">
+                        <div class="cart_product">
+                            <div class="info_cart_product">
+                                <span class="cantidad_producto_carrito"></span>
+                                <p class="titulo_producto_carrito"></p>
+                                <span class="precio_producto_carrito"></span>
+                            </div>
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" viewBox="0 0 24 24" 
+                                stroke-width="1.5" 
+                                stroke="currentColor" 
+                                class="icon_close"
+                            >
+                                <path 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                    d="M6 18 18 6M6 6l12 12" 
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="cart_total">
+                        <h3>Total</h3>
+                        <span class="total_pagar">$0</span>
+                    </div>
+                </div>
+            </div>
+		</div>
+    </header>
+
+
+    <section id="ini">
+        <h1><i>BREF BEAUTY</i></h1>
+        <h2 class="bienvenida">
+            Bienvenidos <br> 
+            ¿Quienes Somos?
+        </h2>
+    </section>
+
+
+    <section id="inicio">
+        <img class="img_nosotros" src="Images/bienvenida.jpg">
+        <div class="text_nosotros"> 
+            <p> <b>¡Conócenos!</b> <br>	       
+            Somos un equipo comprometidos a resaltar tu belleza y realzar tu estilo en cada ocasión especial, con años de experiencia en la industria del maquillaje,
+            estamos aqui para satisfacer todas tus necesidades de belleza. <br> <br>
+            Ya sea que estés buscando un look natural y elegante para el día a día o un maquillaje deslumbrante para una celebración especial, 
+            estamos aquí para ayudarte a lograr el aspecto perfecto que refleje tu personalidad y resalte tus mejores características.</p>
+            
+        </div>
+    </section>
+
+
+    <section id="container_items">
+        <article id="maquillaje">
+            <h2>MAQUILLAJES</h2>
+            <div class="container_maquillaje">
+                <div class="item">
+                    <figure>
+                        <img src="Images/Maquillaje/3.jpg" alt="product">
+                    </figure>
+                    <div class="info_product">
+                        <h3>Labiales</h3>
+                        <button id="btn_abrir_modal1">Seleccionar</button>
+                    </div>
+                    <dialog id="modal1">
+                        <div class="container_products">
+                            <div class="product">
+                                <img src="Images/Maquillaje/1.jpg">
+                                <h3>Labial Rare beauty</h3>
+                                <p class="price"> $1500</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Maquillaje/2.jpg">
+                                <h3>Labial Maybelline mate</h3>
+                                <p class="price"> $600</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Maquillaje/3.jpg">
+                                <h3>Labial DIOR</h3>
+                                <p class="price"> $2000</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            
+                        </div>
+                        <button id="btn_cerrar_modal1">Cerrar</button>
+                    </dialog>
+                </div>
+
+                <div class="item">
+                    <figure>
+                        <img src="Images/Maquillaje/6.jpg" alt="product">
+                    </figure>
+                    <div class="info_product">
+                        <h3>Sombras</h3>
+                        <button id="btn_abrir_modal2">Seleccionar</button>
+                    </div>
+                    <dialog id="modal2">
+                        <div class="container_products">
+                            <div class="product">
+                                <img src="Images/Maquillaje/4.jpg">
+                                <h3>Sombra DIOR</h3>
+                                <p class="price"> $1450</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Maquillaje/5.jpg">
+                                <h3>Sombra MAC</h3>
+                                <p class="price"> $890</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Maquillaje/6.jpg">
+                                <h3>Sombra hyuda beauty</h3>
+                                <p class="price"> $975</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <button id="btn_cerrar_modal2">Cerrar</button>
+                    </dialog>
+                </div>
+
+                <div class="item">
+                    <figure>
+                        <img src="Images/Maquillaje/8.jpg" alt="product">
+                    </figure>
+                    <div class="info_product">
+                        <h3>Bases</h3>
+                        <button id="btn_abrir_modal3">Seleccionar</button>
+                    </div>
+                    <dialog id="modal3">
+                        <div class="container_products">
+                            <div class="product">
+                                <img src="Images/Maquillaje/7.jpg">
+                                <h3>Base Bobbi brown</h3>
+                                <p class="price"> $950</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Maquillaje/8.jpg">
+                                <h3>Base elf</h3>
+                                <p class="price"> $1800</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Maquillaje/9.jpg">
+                                <h3>Base maibelline fit me</h3>
+                                <p class="price"> $1500</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <button id="btn_cerrar_modal3">Cerrar</button>
+                    </dialog>
+                </div>
+            </div>
+        </article>
+
+        <article id="skincare">
+            <h2>SKINCARE</h2>
+            <div class="container_skincare">
+                <div class="item">
+                    <figure>
+                        <img src="Images/Skincare/1.jpg" alt="product">
+                    </figure>
+                    <div class="info_product">
+                        <h3>Limpiadores</h3>
+                        <button id="btn_abrir_modal4">Seleccionar</button>
+                    </div>
+                    <dialog id="modal4">
+                        <div class="container_products">
+                            <div class="product">
+                                <img src="Images/Skincare/1.jpg">
+                                <h3>Limpiador CERAVE</h3>
+                                <p class="price"> $700</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Skincare/2.jpg">
+                                <h3>Limpiador GARNIER AGUA DE ROSAS</h3>
+                                <p class="price"> $580</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Skincare/3.jpg">
+                                <h3>Limpiador PONDS</h3>
+                                <p class="price"> $600</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <button id="btn_cerrar_modal4">Cerrar</button>
+                    </dialog>
+                </div>
+    
+                <div class="item">
+                    <figure>
+                        <img src="Images/Skincare/5.jpg" alt="product">
+                    </figure>
+                    <div class="info_product">
+                        <h3>Cremas</h3>
+                        <button id="btn_abrir_modal5">Seleccionar</button>
+                    </div>
+                    <dialog id="modal5">
+                        <div class="container_products">
+                            <div class="product">
+                                <img src="Images/Skincare/4.jpg">
+                                <h3>Crema CERAVE </h3>
+                                <p class="price"> $560</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Skincare/5.jpg">
+                                <h3>Crema NEUTROGENA</h3>
+                                <p class="price"> $670</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Skincare/6.jpg">
+                                <h3>Crema NIVEA SUN</h3>
+                                <p class="price"> $890</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <button id="btn_cerrar_modal5">Cerrar</button>
+                    </dialog>
+                </div>
+    
+                <div class="item">
+                    <figure>
+                        <img src="Images/Skincare/8.jpg" alt="product">
+                    </figure>
+                    <div class="info_product">
+                        <h3>Serums</h3>
+                        <button id="btn_abrir_modal6">Seleccionar</button>
+                    </div>
+                    <dialog id="modal6">
+                        <div class="container_products">
+                            <div class="product">
+                                <img src="Images/Skincare/7.jpg">
+                                <h3>Serum GARNIER SkinActive</h3>
+                                <p class="price"> $1900</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Skincare/8.jpg">
+                                <h3>Serum REVITALIFET</h3>
+                                <p class="price"> $1250</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Skincare/9.jpg">
+                                <h3>Serum LA ROCHE-POSAY VC</h3>
+                                <p class="price"> $567</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <button id="btn_cerrar_modal6">Cerrar</button>
+                    </dialog>
+                </div>
+            </div>
+        </article>
+
+        <article id="herramientas">
+            <h2>HERRAMIENTAS</h2>
+            <div class="container_herramientas">
+                <div class="item">
+                    <figure>
+                        <img src="Images/Herramientas/1.jpg" alt="product">
+                    </figure>
+                    <div class="info_product">
+                        <h3>Brochas</h3>
+                        <button id="btn_abrir_modal7">Seleccionar</button>
+                    </div>
+                    <dialog id="modal7">
+                        <div class="container_products">
+                            <div class="product">
+                                <img src="Images/Herramientas/1.jpg">
+                                <h3>Brocha MAANGE</h3>
+                                <p class="price"> $700</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Herramientas/2.jpg">
+                                <h3>Brocha LUXIES</h3>
+                                <p class="price"> $560</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Herramientas/3.jpg">
+                                <h3>Brocha TERRE MERE</h3>
+                                <p class="price"> $1740</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <button id="btn_cerrar_modal7">Cerrar</button>
+                    </dialog>
+                </div>
+    
+                <div class="item">
+                    <figure>
+                        <img src="Images/Herramientas/4.jpg" alt="product">
+                    </figure>
+                    <div class="info_product">
+                        <h3>Esponjas</h3>
+                        <button id="btn_abrir_modal8">Seleccionar</button>
+                    </div>
+                    <dialog id="modal8">
+                        <div class="container_products">
+                            <div class="product">
+                                <img src="Images/Herramientas/4.jpg">
+                                <h3>Esponja 1</h3>
+                                <p class="price"> $450</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Herramientas/5.jpg">
+                                <h3>Esponja 2</h3>
+                                <p class="price"> $400</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                            <div class="product">
+                                <img src="Images/Herramientas/6.jpg">
+                                <h3>Esponja 3</h3>
+                                <p class="price"> $300</p>
+                                <button class="btn_add_cart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <button id="btn_cerrar_modal8">Cerrar</button>
+                    </dialog>
+                </div>
+            </div>
+	    </article>
+    </section>
+
+
+    <section id="tutorial">
+        <h2>TUTORIALES</h2>
+        <div class="tuto">
+            <iframe 
+                src="https://www.youtube.com/embed/oW335ANqlvU?si=Xy_gTspvTetT8lAc" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; 
+                autoplay; 
+                clipboard-write; 
+                encrypted-media; 
+                gyroscope; 
+                picture-in-picture; 
+                web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+            ></iframe>
+        </div>
+    </section>
+    
+
+    <section id="comentarios">
+        <h2>COMENTARIOS</h2>
+        <div class="form-section">
+            <h3>Enviar quejas, comentarios o sugerencias</h3>
+            <h4>ingresa tus datos en este apartado</h4>
+            <form action="mailto:wendy@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" accesskey="n" required>
+                
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+                    
+                <label>Género:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Masculino</label>
+                        
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Femenino</label>
+                </div>
+                <div>
+                    <label for="newsletter">Suscribirse al sitio:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">                	
+                </div>
+                    
+                <label for="file">Cargar archivo:</label>
+                <input type="file" id="file" name="file">
+                    
+                <input type="hidden" name="hiddenField" value="hiddenValue">
+                    
+                <button style="margin:4px 0px" type="submit">Enviar</button>
+                <button type="reset">Reiniciar</button>
+            </form>
+        </div>
+    </section>
+
+   <footer id="contactos">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 >Contacto</h2>
+                <p>Puedes ponerte en contacto con nosotros a través de:</p>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>
+                        <img style="filter:invert(100);" src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="teléfono" width="29">
+                        <b>Teléfono:</b> 9171003108
+                    </li>
+                    <li>
+                        <img style="filter:invert(100);" src="https://img.icons8.com/ios-filled/50/000000/email-open.png" alt="email" width="29">
+                        <a href="mailto:wend31032003y@gmail.com"><b>Email:</b> wendy31032003@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>
+                        <img style="filter:invert(100);" src="https://img.icons8.com/ios-filled/50/000000/address.png" alt="dirección" width="29">
+                        <a href="https://www.google.com/maps/@17.982728,-94.5419566,3a,75y,344.58h,91.72t/data=!3m6!1e1!3m4!1s-OjkDlnZerlT7nfKNDAAzw!2e0!7i13312!8i6656?coh=205409&entry=ttu"><b>Dirección:</b> Dirección física</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

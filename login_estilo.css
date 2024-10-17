@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("fondo9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.foto1{
+   text-align: center;
+   margin-top: 50px;
+}
+
+/* .foto2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ } */
+
+ .boton_container{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ #btn_registrarse{
+    border: none;
+    background: none;
+    background-color: #FAC9CA;
+    color: #d35d6e;
+    padding: 15px 10px;
+    cursor: pointer;
+ }
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .usuario{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+form .contra{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.usuario input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.usuario label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.usuario span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: purple;
+    transition: .5s;
+}
+
+.usuario input:focus ~ label,
+.usuario input:focus ~ label{
+    top: -5px;
+    color: #11480b;
+}
+
+.usuario input:focus ~ span::before,
+.usuario input:focus ~ span::before{
+    width: 100%;
+}
+
+.contra input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.contra label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.contra span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: purple;
+    transition: .5s;
+}
+
+.contra input:focus ~ label,
+.contra input:focus ~ label{
+    top: -5px;
+    color: #11480b;
+}
+
+.contra input:focus ~ span::before,
+.contra input:focus ~ span::before{
+    width: 100%;
+}
+
+.loh {
+    margin-right: -56px;
+    margin-top: -19px;
+    margin-left: -6px;
+}
+
+.hh {
+    background-color: #F69DB1;
+}
