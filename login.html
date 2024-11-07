@@ -15,21 +15,43 @@
         class="loh"/>
         <h1>Registro de Usuario</h1>
         <form action="index.html">
-            <div class="usuario">
-                <input type="text" required maxlength="10">
-                <label>Nombre de usuario</label>
+            <div class="usua">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario" required maxlength="10">
             </div>
-            <div class="contra"> 
-                <input type="password" required maxlength="4">
-                <label>Contraseña</label>
+            <div class="contra">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required maxlength="4">
             </div>
             <div class="boton_container">
                 <button id="btn_registrarse">Registrarse</button>
             </div>
-            
-            <!-- <section class="foto2">
-            <input type="submit"  alt="Registrarse">
-            </section> -->
         </form>
     </div>
+    <script>
+        function validarCredenciales(usuario,password){
+            const usuarioValido="admin";
+            const passwordValido="1234";
+
+            if(usuario === usuarioValido && password === passwordValido){
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+    document.getElementById("btn_registrarse").onclick = function(){
+        const usuario = document.getElementById("usuario").value;
+        const password = documet.getElementById("password").value;
+
+        if(validarCredenciales(usuario,password)) {
+            window.location.href = "index.html";
+        } else {
+            alert("Usuario o contraseña incorrectos.");
+        }
+
+        
+    }
+    </script>
 </body>    

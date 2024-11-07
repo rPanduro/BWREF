@@ -9,17 +9,6 @@ body{
     height: 100vh;
 }
 
-.foto1{
-   text-align: center;
-   margin-top: 50px;
-}
-
-/* .foto2{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
- } */
-
  .boton_container{
     padding: 15px 30px;
     line-height: 2;
@@ -59,7 +48,7 @@ body{
     box-sizing: border-box;
 }
 
-form .usuario{
+form .usua{
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 30px 0;
@@ -71,7 +60,7 @@ form .contra{
     margin: 30px 0;
 }
 
-.usuario input{
+.usua input{
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -81,7 +70,7 @@ form .contra{
     outline: none;
 }
 
-.usuario label{
+.usua label{
     position: absolute;
     top: 50%;
     left: 5px;
@@ -92,7 +81,7 @@ form .contra{
     transition: .5s;
 }
 
-.usuario span::before{
+.usua span::before{
     content: '';
     position: absolute;
     top: 40px;
@@ -103,14 +92,14 @@ form .contra{
     transition: .5s;
 }
 
-.usuario input:focus ~ label,
-.usuario input:focus ~ label{
+.usua input:focus ~ label,
+.usua input:focus ~ label{
     top: -5px;
     color: #11480b;
 }
 
-.usuario input:focus ~ span::before,
-.usuario input:focus ~ span::before{
+.usua input:focus ~ span::before,
+.usua input:focus ~ span::before{
     width: 100%;
 }
 

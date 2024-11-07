@@ -118,7 +118,7 @@ const showHTML = () => {
 
         rowProduct.append(containerProduct);
 
-        total = total + (product.quantity * parseInt(product.price.slice(1)));
+        total = total + (product.quantity * parseFloat(product.price.slice(1)));
         totalOfProducts = totalOfProducts + product.quantity;
 
     });
@@ -256,4 +256,104 @@ btnAbrirModal8.addEventListener("click",()=>{
 
 btnCerrarModal8.addEventListener("click",()=>{
     modal8.close();
+})
+
+/*modal9*/
+const btnAbrirModal9 =
+document.querySelector("#btn_abrir_modal9");
+const btnCerrarModal9 =
+document.querySelector("#btn_cerrar_modal9");
+const modal9 =
+document.querySelector("#modal9");
+
+btnAbrirModal9.addEventListener("click",()=>{
+    modal9.showModal();
+    })
+
+btnCerrarModal9.addEventListener("click",()=>{
+    modal9.close();
+})
+
+
+/*modal10*/
+const btnAbrirModal10 =
+document.querySelector("#btn_abrir_modal10");
+const btnCerrarModal10 =
+document.querySelector("#btn_cerrar_modal10");
+const modal10 =
+document.querySelector("#modal10");
+
+btnAbrirModal10.addEventListener("click",()=>{
+    modal10.showModal();
+    })
+
+btnCerrarModal10.addEventListener("click",()=>{
+    modal10.close();
+})
+
+
+/*modal11*/
+const btnAbrirModal11 =
+document.querySelector("#btn_abrir_modal11");
+const btnCerrarModal11 =
+document.querySelector("#btn_cerrar_modal11");
+const modal11 =
+document.querySelector("#modal11");
+
+btnAbrirModal11.addEventListener("click",()=>{
+    modal11.showModal();
+    })
+
+btnCerrarModal11.addEventListener("click",()=>{
+    modal11.close();
+})
+
+
+/*modal12*/
+const btnAbrirModal12 =
+document.querySelector("#btn_abrir_modal12");
+const btnCerrarModal12 =
+document.querySelector("#btn_cerrar_modal12");
+const modal12 =
+document.querySelector("#modal12");
+
+btnAbrirModal12.addEventListener("click",()=>{
+    modal12.showModal();
+    })
+
+btnCerrarModal12.addEventListener("click",()=>{
+    modal12.close();
+})
+
+
+/*modal13*/
+const btnAbrirModal13 =
+document.querySelector("#btn_abrir_modal13");
+const btnCerrarModal13 =
+document.querySelector("#btn_cerrar_modal13");
+const modal13 =
+document.querySelector("#modal13");
+
+btnAbrirModal13.addEventListener("click",()=>{
+    modal13.showModal();
+    })
+
+btnCerrarModal13.addEventListener("click",()=>{
+    modal13.close();
+})
+
+
+if (window.innerWidth <= 768) {
+    console.log("Estás en un dispositivo móvil");
+    // código específico para móviles
+    
+}
+
+const btnForm = 
+document.querySelector(".enviar");
+const coment = 
+document.querySelector("#name");
+
+btnForm.addEventListener("click",()=>{
+    coment.classList.toggle('hidden_cart');
 })
