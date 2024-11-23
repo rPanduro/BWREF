@@ -1,3 +1,13 @@
+// menu-movil
+// Mostrar/Ocultar el menú principal
+document.querySelector("#menu-movil button").addEventListener("click", () => {
+    const menu = document.querySelector("#menu-movil ul");
+    menu.classList.toggle("active");
+
+
+});
+
+
 //carrito//
 const btnCart = 
 document.querySelector(".container_cart_icon");
@@ -96,6 +106,7 @@ const showHTML = () => {
         containerProduct.classList.add('cart_product');
 
         containerProduct.innerHTML = `
+        <div class="row_product">
             <div class="info_cart_product">
                 <span class="cantidad_producto_carrito">${product.quantity}</span>
                 <p class="titulo_producto_carrito">${product.title}</p>
@@ -114,6 +125,7 @@ const showHTML = () => {
                     d="M6 18 18 6M6 6l12 12" 
                 />
             </svg>
+        </div>
         `;
 
         rowProduct.append(containerProduct);
@@ -127,6 +139,34 @@ const showHTML = () => {
     countProducts.innerText = totalOfProducts;
 
 };
+
+
+
+/*BOTON IR PAGAR */
+// Seleccionar el botón de "Ir a pagar"
+const btnIrAPagar = document.getElementById('btn_ir_a_pagar');
+const totalPagar = document.querySelector('.total_pagar');
+
+// Función para actualizar el total y el estado del botón
+function actualizarTotal(total) {
+    totalPagar.textContent = `$${total}`;
+    btnIrAPagar.disabled = total === 0; // Habilitar si el total es mayor a 0
+}
+
+// Ejemplo de uso: esta función debe llamarse cada vez que se actualicen los productos en el carrito
+function actualizarCarrito() {
+    let total = calcularTotalCarrito(); // Función que calcula el total
+    actualizarTotal(total);
+}
+
+// Simulación de una función que calcula el total 
+function calcularTotalCarrito() {
+    // Aquí puedes calcular el total de los productos en el carrito
+    return 1; 
+}
+
+// Llama a la función para actualizar el carrito cuando se cargue la página o cambie el carrito
+actualizarCarrito();
 
 
 //Modales//
