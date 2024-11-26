@@ -7,6 +7,14 @@ document.querySelector("#menu-movil button").addEventListener("click", () => {
 
 });
 
+//user//
+const btnUser = 
+document.querySelector(".user_icon");
+
+btnUser.addEventListener("click",()=>{
+    window.location.href = "u.html";
+})
+
 
 //carrito//
 const btnCart = 

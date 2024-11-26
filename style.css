@@ -133,6 +133,20 @@ nav li ul li ul {
 
 
 
+/*user*/
+.user_icon{
+    position: relative;
+}
+
+.icon_user{
+    width: 39px;
+    height: 39px;
+    stroke: #000;
+}
+
+
+
+
 /*shop_cart*/
 .container_icon{
     position: relative;
@@ -1394,6 +1408,17 @@ footer ul li a:hover {
         font-size: 26px;
         padding: 10px;
     }
+
+    /*user*/
+    .user_icon{
+        right: 10px;
+    }
+
+    .icon_user{
+        width: 29px;
+        height: 29px;
+    }
+
 
     /* shop_cart */
     .container_icon{
