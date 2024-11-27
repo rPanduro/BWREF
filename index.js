@@ -397,11 +397,30 @@ if (window.innerWidth <= 768) {
     
 }
 
-const btnForm = 
-document.querySelector(".enviar");
-const coment = 
-document.querySelector("#name");
-
-btnForm.addEventListener("click",()=>{
-    coment.classList.toggle('hidden_cart');
-})
+function handleFormSubmit(event) {
+    event.preventDefault(); // Evita el envío por defecto del formulario.
+  
+    // Capturar los valores de los campos.
+    const name = document.querySelector("#name").value.trim();
+    const comments = document.querySelector("#comments").value.trim();
+    const gender = document.querySelector('input[name="gender"]:checked')?.value || "No especificado";
+    const newsletter = document.querySelector("#newsletter").checked ? "Sí" : "No";
+  
+    // Validar campos requeridos.
+    if (!name || !comments) {
+      alert("Por favor, completa los campos obligatorios.");
+      return;
+    }
+  
+    // Construir el contenido del correo.
+    const subject = `Formulario de contacto de ${name}`;
+    const body = `Nombre: ${name}\nComentarios: ${comments}\nGénero: ${gender}\nSuscripción al boletín: ${newsletter}`;
+  
+    // Construir el enlace mailto.
+    const mailtoLink = `mailto:beautyflower.cosmetics@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+    // Abrir el cliente de correo con los datos.
+    window.location.href = mailtoLink;
+  }
+  
+  
